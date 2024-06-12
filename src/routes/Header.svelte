@@ -13,7 +13,7 @@
 		<a
 			title="Bartekbas, CC BY-SA 2.5 &lt;https://creativecommons.org/licenses/by-sa/2.5&gt;, via Wikimedia Commons"
 			href="https://commons.wikimedia.org/wiki/File:Kuskus.jpg"
-			><img width="318" alt="Kuskus" src={kuskus_logo} />
+			><img id="avatar-logo" alt="Kuskus" src={kuskus_logo} />
 		</a>
 	</div>
 </header>
@@ -44,9 +44,17 @@
 		position: absolute;
 		top: var(--outside-padding);
 		right: var(--outside-padding);
+	}
 
-		& img {
-			border-radius: 100%;
+	img#avatar-logo {
+		width: 16.56vw;
+		border-radius: 100%;
+	}
+
+	@media (max-width: 415px) {
+		div#avatar-wrapper {
+			top: calc(var(--outside-padding) / 2);
+			right: calc(var(--outside-padding) / 2);
 		}
 	}
 </style>
