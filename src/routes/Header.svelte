@@ -47,14 +47,24 @@
 	}
 
 	img#avatar-logo {
-		width: 16.56vw;
+		width: 24vw;
 		border-radius: 100%;
 	}
-
-	@media (max-width: 415px) {
+	
+	@media (max-width: 1200px) {
 		div#avatar-wrapper {
 			top: calc(var(--outside-padding) / 2);
 			right: calc(var(--outside-padding) / 2);
+		}
+
+		img#avatar-logo {
+			width: 16.56vw;
+		}
+	}
+
+	@media (max-width: 1600) {
+		img#avatar-logo {
+			width: 12vw;
 		}
 	}
 </style>
