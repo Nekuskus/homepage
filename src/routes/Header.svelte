@@ -1,5 +1,6 @@
 <script>
 	// import { page } from '$app/stores';
+	import kuskus_logo from "$lib/images/kuskus-cropped.jpg";
 </script>
 
 <header>
@@ -7,19 +8,27 @@
 		<span title="https://">@</span>kuskus.dev
 	</h1>
 	<!-- TODO: Add couscous spelling and pronunciation variations -->
+
+	<div id="avatar-wrapper">
+		<a
+			title="Bartekbas, CC BY-SA 2.5 &lt;https://creativecommons.org/licenses/by-sa/2.5&gt;, via Wikimedia Commons"
+			href="https://commons.wikimedia.org/wiki/File:Kuskus.jpg"
+			><img width="318" alt="Kuskus" src={kuskus_logo} />
+		</a>
+	</div>
 </header>
 
 <style>
 	header {
 		display: flex;
 		justify-content: space-between;
-		
+
 		padding-left: var(--outside-padding);
 		padding-top: var(--outside-padding);
 		padding-right: var(--outside-padding);
 		padding-bottom: 1em;
 
-		& h1 { 
+		& h1 {
 			font-weight: bold;
 		}
 	}
@@ -28,6 +37,16 @@
 		margin-right: 0.25em;
 		font-size: 1.25em;
 
-		color: var(--color-theme-1)
+		color: var(--color-theme-1);
+	}
+
+	div#avatar-wrapper {
+		position: absolute;
+		top: var(--outside-padding);
+		right: var(--outside-padding);
+
+		& img {
+			border-radius: 100%;
+		}
 	}
 </style>
