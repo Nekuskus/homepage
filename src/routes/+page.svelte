@@ -2,12 +2,12 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>@kuskus.dev</title>
+	<meta name="author" content="@Nekuskus <https://kuskus.dev>">
+	<meta name="description" content="kuskus's homepage" />
 </svelte:head>
 
 <section>
-	<!-- TODO: Find pretty styling for <code> -->
 	<p>
 		<code>kuskus.dev</code> (or <b>Nekuskus</b>) is a
 		<a href="https://wikipedia.org/wiki/Programmer" title="Wikipedia:Programmer"
