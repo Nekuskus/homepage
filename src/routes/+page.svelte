@@ -2,8 +2,7 @@
 </script>
 
 <svelte:head>
-	<title>@kuskus.dev</title>
-	<meta name="author" content="@Nekuskus <https://kuskus.dev>">
+	<title>@kuskus.dev - homepage</title>
 	<meta name="description" content="kuskus's homepage" />
 </svelte:head>
 
@@ -27,6 +26,9 @@
 			>]</sup
 		>, and is in the process of slowly setting up this website.
 	</p>
+
+	<!-- TODO: SSO ping? + integration for message send button on preferred platform -->
+	<!-- TODO: Language tags! -->
 </section>
 
 <style>

@@ -1,14 +1,15 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	/* --font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+	/* TODO: Review this list */
+	--font-body-fallback: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--color-theme-1: #0e9f89;
 	--color-theme-2: #4075a6;
 	--color-text: rgba(0, 0, 0, 0.7);
 	--outside-padding: 3em;
-	font-family: var(--font-mono);
+	font-family: var(--font-mono), var(--font-body-fallback);
 	color: var(--color-text);
 }
 

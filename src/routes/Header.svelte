@@ -6,6 +6,7 @@
 	<h1>
 		<span title="https://">@</span>kuskus.dev
 	</h1>
+	<!-- TODO: Add couscous spelling and pronunciation variations -->
 </header>
 
 <style>
