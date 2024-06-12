@@ -5,7 +5,7 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 	--font-mono: 'Fira Mono', monospace;
 	--color-theme-1: #0e9f89;
-	/* --color-theme-2: #4075a6; color not yet selected*/
+	--color-theme-2: #4075a6;
 	--color-text: rgba(0, 0, 0, 0.7);
 	--outside-padding: 3em;
 	font-family: var(--font-mono);
@@ -47,3 +47,13 @@ input, button {
 		font-size: 2.4rem;
 	}
 } */
+
+code {
+	color: var(--color-theme-1);
+	background-color: rgb(196, 250, 206);
+	border-radius: 0.3em;
+	padding: 1px 2px;
+	white-space: nowrap;
+
+	font-family: var(--font-mono);
+}
