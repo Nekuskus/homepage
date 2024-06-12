@@ -33,7 +33,7 @@
 	section {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: start;
 		align-items: start;
 		flex: 0.8;
 
