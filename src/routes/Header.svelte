@@ -20,7 +20,7 @@
 
 <style>
 	header {
-		display: flex;
+		/* display: flex; */
 
 		padding-left: var(--outside-padding);
 		padding-top: var(--outside-padding);
@@ -29,6 +29,7 @@
 
 		& h1 {
 			font-weight: bold;
+            text-align: left;
 		}
 	}
 
@@ -52,19 +53,20 @@
 		opacity: 0;
 	}
 	
-
-	h1:hover span#https {
-		display: inline-block;
-		position: relative;
-		
-		animation: slide-in 0.5s forwards;
-	}
-	
-	h1:hover span#at {
-		display: inline-block;
-		position: relative;
-		
-		animation: slide-out 0.5s forwards;
+    @media (min-width: 600px) {
+        h1:hover span#https {
+            display: inline-block;
+            position: relative;
+            
+            animation: slide-in 0.5s forwards;
+        }
+        
+        h1:hover span#at {
+            display: inline-block;
+            position: relative;
+            
+            animation: slide-out 0.5s forwards;
+        }
 	}
 
 	
@@ -112,7 +114,7 @@
 		}
 	}
 
-	@media (max-width: 1600) {
+	@media (max-width: 1600px) {
 		img#avatar-logo {
 			width: 12vw;
 		}
