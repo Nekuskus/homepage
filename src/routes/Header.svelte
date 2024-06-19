@@ -26,13 +26,13 @@
 		padding-top: var(--outside-padding);
 		padding-right: var(--outside-padding);
 		padding-bottom: 1em;
-
-		& h1 {
-			font-weight: bold;
-            text-align: left;
-		}
 	}
 
+    h1 {
+        font-weight: bold;
+        text-align: left;
+    }
+    
 	h1 span#at {
 		display: inline-block;
 		margin-right: 0.25em;
