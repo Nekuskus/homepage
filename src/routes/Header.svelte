@@ -44,7 +44,7 @@
 		display: none;
 		position: relative;
 
-        left: -1em;
+		left: -1em;
 		margin-right: 0.25em;
 		font-size: 1.25em;
 
