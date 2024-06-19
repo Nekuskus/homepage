@@ -5,7 +5,7 @@
 
 <header>
     <h1>
-        <span id='at'>@</span><span id="https">@</span>kuskus.dev
+        <span id='at'>@</span><span id="https">https://</span>kuskus.dev
     </h1>
     <!-- TODO: Add couscous spelling and pronunciation variations -->
 </header>
