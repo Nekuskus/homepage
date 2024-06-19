@@ -8,20 +8,19 @@
 		<span id='at'>@</span><span id="https">https://</span>kuskus.dev
 	</h1>
 	<!-- TODO: Add couscous spelling and pronunciation variations -->
-
-	<div id="avatar-wrapper">
-		<a
-			title="Bartekbas, CC BY-SA 2.5 &lt;https://creativecommons.org/licenses/by-sa/2.5&gt;, via Wikimedia Commons"
-			href="https://commons.wikimedia.org/wiki/File:Kuskus.jpg"
-			><img id="avatar-logo" alt="Kuskus" src={kuskus_logo} />
-		</a>
-	</div>
 </header>
+
+<div id="avatar-wrapper">
+    <a
+        title="Bartekbas, CC BY-SA 2.5 &lt;https://creativecommons.org/licenses/by-sa/2.5&gt;, via Wikimedia Commons"
+        href="https://commons.wikimedia.org/wiki/File:Kuskus.jpg"
+        ><img id="avatar-logo" alt="Kuskus" src={kuskus_logo} />
+    </a>
+</div>
 
 <style>
 	header {
 		display: flex;
-		justify-content: space-between;
 
 		padding-left: var(--outside-padding);
 		padding-top: var(--outside-padding);
