@@ -5,7 +5,7 @@
 
 <header>
     <h1>
-        <span id='at'>@</span><span id="https">https://</span>kuskus.dev
+        <span id='at'>@</span><span id="https">https://</span><span id="userhandle">kuskus.dev</span>
     </h1>
     <!-- TODO: Add couscous spelling and pronunciation variations -->
 </header>
@@ -18,7 +18,7 @@
     </a>
 </div>
 
-<style>
+<style lang="scss">
     header {
         /* display: flex; */
 
@@ -54,18 +54,26 @@
     }
     
     @media (min-width: 600px) {
-        h1:hover span#https {
-            display: inline-block;
-            position: relative;
+        h1:hover {
+            & span#https  {
+                display: inline-block;
+                position: relative;
             
-            animation: slide-in 0.5s forwards;
-        }
-        
-        h1:hover span#at {
-            display: inline-block;
-            position: relative;
+                animation: slide-in 0.5s forwards;
+            }
             
-            animation: slide-out 0.5s forwards;
+            & span#at {
+                display: inline-block;
+                position: relative;
+                
+                animation: slide-out 0.5s forwards;
+            }
+
+            & span#userhandle {
+                display: inline-block;
+                position: relative;
+                left: -1.25em;
+            }
         }
     }
 
