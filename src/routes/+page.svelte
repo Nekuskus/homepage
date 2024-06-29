@@ -7,6 +7,10 @@
 	<meta name="description" content="kuskus's homepage" />
 </svelte:head>
 
+<Comment style='position: absolute; top: 1em; right: 30%;'>
+    &lt;!-- TODO: Subpage routing here --&gt;
+</Comment>
+
 <section>
 	<p>
 		<code>kuskus.dev</code> (or <b>Nekuskus</b>) is a
