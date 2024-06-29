@@ -1,4 +1,5 @@
 <script>
+    import Comment from "./Comment.svelte";
 </script>
 
 <svelte:head>
@@ -27,8 +28,13 @@
 		>, and is in the process of slowly setting up this website.
 	</p>
 
-	<!-- TODO: SSO ping? + integration for message send button on preferred platform -->
-	<!-- TODO: Language tags! -->
+    <Comment>
+	&lt;!-- TODO: SSO ping? + integration for message send button on preferred platform --&gt;
+    </Comment>
+	
+    <Comment vertical style='position: absolute; right: 0; top: 35%'>
+        &lt;!-- TODO: Language selector here... --&gt;
+    </Comment>
 </section>
 
 <style>
