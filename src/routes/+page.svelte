@@ -32,9 +32,8 @@
 		>, and is in the process of slowly setting up this website.
 	</p>
 
-    <Comment>
-	&lt;!-- TODO: SSO ping? + integration for message send button on preferred platform --&gt;
-    </Comment>
+    <p>You can reach me over email at <code>contact at this domain</code>, or over discord at <code>kuskus.dev</code>.</p>
+
 	
     <Comment vertical style='position: absolute; right: 0; top: 35%'>
         &lt;!-- TODO: Language selector here... --&gt;
