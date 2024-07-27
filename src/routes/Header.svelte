@@ -2,12 +2,19 @@
     // import { page } from '$app/stores';
 
     import Comment from "./Comment.svelte";
-
 </script>
 
 <header>
     <h1>
-        <span id='at'>@</span><span id="https">https://</span><span id="userhandle">kuskus.dev<Comment style='display: inline;'>&lt;!-- TODO: Add couscous spelling and pronunciation variations --&gt;</Comment></span>
+        <a href="/">
+            <span id="at">@</span><span id="https">https://</span><span
+                id="userhandle"
+                >kuskus.dev<Comment style="display: inline;"
+                    >&lt;!-- TODO: Add couscous spelling and pronunciation
+                    variations --&gt;</Comment
+                ></span
+            >
+        </a>
     </h1>
 </header>
 
@@ -25,7 +32,7 @@
         font-weight: bold;
         text-align: left;
     }
-    
+
     h1 span#at {
         display: inline-block;
         margin-right: 0.25em;
@@ -45,20 +52,25 @@
         color: var(--color-theme-1);
         opacity: 0;
     }
-    
+
+    a {
+        color: unset;
+        text-decoration: none;
+    }
+
     @media (min-width: 600px) {
         h1:hover {
-            & span#https  {
+            & span#https {
                 display: inline-block;
                 position: relative;
-            
+
                 animation: slide-in 0.5s forwards;
             }
-            
+
             & span#at {
                 display: inline-block;
                 position: relative;
-                
+
                 animation: slide-out 0.5s forwards;
             }
 
@@ -80,7 +92,7 @@
             top: 0;
         }
     }
-    
+
     @keyframes slide-out {
         0% {
             opacity: 1;

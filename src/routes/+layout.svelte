@@ -2,11 +2,14 @@
     import Logo from "./Logo.svelte";
     import Header from "./Header.svelte";
     import Footer from "./Footer.svelte";
+    import Router from "./Router.svelte";
     import "./styles.css";
 </script>
 
 <div class="app">
     <Logo />
+
+    <Router />
 
     <Header />
 
