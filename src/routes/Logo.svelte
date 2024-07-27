@@ -7,14 +7,10 @@
 <svelte:window bind:innerWidth={size} />
 
 <div id="avatar-wrapper">
-    {#if size > 1600}    
-        <Comment>
-            &lt;!-- TODO: Make logo appropriately smaller --&gt;
-        </Comment>
-    {/if}
     <a
         title="Bartekbas, CC BY-SA 2.5 &lt;https://creativecommons.org/licenses/by-sa/2.5&gt;, via Wikimedia Commons"
         href="https://commons.wikimedia.org/wiki/File:Kuskus.jpg"
+        target="_blank"
         ><img id="avatar-logo" alt="Kuskus" src={kuskus_logo} />
     </a>
 </div>
@@ -22,29 +18,12 @@
 <style lang="scss">
     div#avatar-wrapper {
         position: absolute;
-        top: var(--outside-padding);
-        right: var(--outside-padding);
+        top: calc(var(--outside-padding) / 2);
+        right: calc(var(--outside-padding) / 2);
     }
 
     img#avatar-logo {
-        width: 24vw;
+        height: clamp(43px, 5vh, 65px);
         border-radius: 100%;
-    }
-    
-    @media (max-width: 1200px) {
-        div#avatar-wrapper {
-            top: calc(var(--outside-padding) / 2);
-            right: calc(var(--outside-padding) / 2);
-        }
-
-        img#avatar-logo {
-            width: 16.56vw;
-        }
-    }
-
-    @media (max-width: 1600px) {
-        img#avatar-logo {
-            width: 12vw;
-        }
     }
 </style>
