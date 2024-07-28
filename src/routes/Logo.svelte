@@ -1,6 +1,5 @@
 <script>
     import kuskus_logo from "$lib/images/kuskus-cropped.jpg";
-    import Comment from "./Comment.svelte";
     $: size = 0;
 </script>
 

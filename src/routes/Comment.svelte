@@ -4,7 +4,7 @@
 </script>
 
 <p class:vertical class='visual-comment' {style}>
-    <slot/>
+    &lt;!-- <slot/> --&gt;
 </p>
 
 <style>

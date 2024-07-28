@@ -1,6 +1,4 @@
 <script>
-    // import { page } from '$app/stores';
-
     import Comment from "./Comment.svelte";
 </script>
 
@@ -10,8 +8,8 @@
             <span id="at">@</span><span id="https">https://</span><span
                 id="userhandle"
                 >kuskus.dev<Comment style="display: inline;"
-                    >&lt;!-- TODO: Add couscous spelling and pronunciation
-                    variations --&gt;</Comment
+                    >TODO: Add couscous spelling and pronunciation
+                    variations</Comment
                 ></span
             >
         </a>
@@ -20,8 +18,6 @@
 
 <style lang="scss">
     header {
-        /* display: flex; */
-
         padding-left: var(--outside-padding);
         padding-top: var(--outside-padding);
         padding-right: var(--outside-padding);

@@ -1,15 +1,11 @@
 <script>
-    import Comment from "./Comment.svelte";
+
 </script>
 
 <svelte:head>
 	<title>@kuskus.dev - homepage</title>
 	<meta name="description" content="kuskus's homepage" />
 </svelte:head>
-
-<!-- <Comment style='position: absolute; top: 1em; right: 30%;'>
-    &lt;!-- TODO: Subpage routing here --&gt;
-</Comment> -->
 
 <section>
 	<p>
@@ -35,10 +31,6 @@
     <p>You can reach me over email at <code>contact at this domain</code>, or over discord at <code>kuskus.dev</code>.</p>
 
 	<p>This homepage will soon include a short list of my projects.</p>
-
-    <Comment vertical style='position: absolute; right: 0; top: 35%'>
-        &lt;!-- TODO: Language selector here... --&gt;
-    </Comment>
 </section>
 
 <style>

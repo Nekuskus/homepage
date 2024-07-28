@@ -3,6 +3,7 @@
     import Header from "./Header.svelte";
     import Footer from "./Footer.svelte";
     import Router from "./Router.svelte";
+    import Comment from "./Comment.svelte";
     import "./styles.css";
 </script>
 
@@ -11,11 +12,20 @@
 
     <Router />
 
+    <Comment vertical style='position: absolute; right: 0; top: 35%'>
+        TODO: Language selector here...
+    </Comment>
+
     <Header />
 
     <main>
         <slot />
     </main>
+
+
+    <Comment style='position: absolute; left: 0; bottom: 0;'> 
+        Add theme selector: portfolio, neocities; saved in cookies
+    </Comment>
 
     <Footer />
 </div>
