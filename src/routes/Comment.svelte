@@ -20,7 +20,7 @@
     }
 
     p.vertical {
-        writing-mode: sideways-rl;
-        text-orientation: upright;
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
     }
 </style>

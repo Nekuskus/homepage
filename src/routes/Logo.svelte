@@ -1,9 +1,6 @@
 <script>
     import kuskus_logo from "$lib/images/kuskus-cropped.jpg";
-    $: size = 0;
 </script>
-
-<svelte:window bind:innerWidth={size} />
 
 <div id="avatar-wrapper">
     <a

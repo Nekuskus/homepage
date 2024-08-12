@@ -29,7 +29,7 @@
         text-align: left;
     }
 
-    h1 span#at {
+    span#at {
         display: inline-block;
         margin-right: 0.25em;
         font-size: 1.25em;
@@ -37,7 +37,7 @@
         color: var(--color-theme-1);
     }
 
-    h1 span#https {
+    span#https {
         display: none;
         position: relative;
 
