@@ -1,8 +1,21 @@
 <script>
     import { page } from "$app/stores";
+    let emoji;
+
+    let month = new Date().getMonth();
+    
+    if (month == 11 || month <= 1) { // winter
+        emoji = "🍊";
+    } else if (month <= 4) { // spring
+        emoji = "🍒";
+    } else if (month <= 7) { // summer
+        emoji = "🍉";
+    } else { // autumn
+        emoji = "🍇";
+    }
 </script>
 
-<div id="router">
+<div id="router" style="--month-emoji: '{emoji}';">
     <ul>
         <li aria-current={$page.url.pathname === '/' ? "page" : undefined}>
             <a href="/">main</a>
@@ -17,7 +30,7 @@
 </div>
 
 <style lang="scss">
-    div#router {
+    #router {
         position: absolute;
         top: 0;
         right: 30%;
@@ -30,7 +43,7 @@
     }
 
     li:not(:first-child)::before {
-        content: "🍇";
+        content: var(--month-emoji);
         margin-left: 1em;
         margin-right: 1em;
     }
