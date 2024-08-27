@@ -32,8 +32,7 @@
         </Comment>
 
         <Comment style="position: absolute; right: 0; bottom: 0;">
-            TODO: media progress tracker<br />&lt;pre&gt; (maybe), no outline,
-            bars
+            TODO: media progress tracker<br />&lt;pre&gt; (maybe), ascii outline! (+─|), bars
         </Comment>
     {/if}
 
