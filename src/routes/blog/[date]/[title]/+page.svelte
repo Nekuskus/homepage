@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-    <title>@kuskus.dev - blog - {data.date}</title>
+    <title>@kuskus.dev - blog - {data.title}</title>
     <meta name="description" content="kuskus's blog" />
 </svelte:head>
 
