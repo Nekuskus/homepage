@@ -1,4 +1,4 @@
-<script lang="ts">
+<script context="module" lang="ts">
     import Comment from '../Comment.svelte';
 
     import { marked } from "marked";
