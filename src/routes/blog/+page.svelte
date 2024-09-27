@@ -12,6 +12,7 @@
 
 <article>
     <ul>
+        <Comment>TODO: Make these blocks!</Comment>
         {#each data.entries as { heading, date, title }}
             <li>
                 <a href="/blog/{date}/{title}">

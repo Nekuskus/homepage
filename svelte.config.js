@@ -20,8 +20,8 @@ const config = {
 
     kit: {
         adapter: adapter({
-            pages: 'build',
-            assets: 'build',
+            pages: 'build/out',
+            assets: 'build/out',
             fallback: undefined,
             precompress: false,
             strict: true
