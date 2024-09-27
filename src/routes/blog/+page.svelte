@@ -1,38 +1,6 @@
-<script context="module" lang="ts">
-    import Comment from '../Comment.svelte';
-
-    import { marked } from "marked";
-    const fmodule = import.meta.glob("$lib/contents/blog/*.md", {
-        query: "?raw",
-        import: "default",
-    });
-    const iterFiles = Object.entries(fmodule);
-    const entries = iterFiles.map(async ([path, resolver]) => {
-        const content = (await resolver()) as string;
-        const metadata = path
-            .replaceAll("\\", "/")
-            .split("/")
-            .at(-1)
-            ?.replace(".md", "")
-            .split(" ")!;
-        const header = marked
-            .lexer(content)
-            .find((token) => token.type === "heading");
-
-        if (!header) {
-            return {
-                heading: "Header missing?",
-                date: metadata[0],
-                title: metadata[1],
-            };
-        }
-
-        return {
-            heading: (header as any).text,
-            date: metadata[0],
-            title: metadata[1],
-        };
-    });
+<script lang="ts">
+    export let data: import('./$types').PageData;
+    import Comment from "../Comment.svelte";
 </script>
 
 <svelte:head>
@@ -42,14 +10,31 @@
 
 <Comment>TODO: CSS</Comment>
 
-<ul>
-    {#each entries as promise}
-        {#await promise then { heading, date, title }}
+<article>
+    <ul>
+        {#each data.entries as { heading, date, title }}
             <li>
                 <a href="/blog/{date}/{title}">
                     {heading} [{date}]
                 </a>
             </li>
-        {/await}
-    {/each}
-</ul>
+        {/each}
+    </ul>
+</article>
+
+<style>
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        
+        flex: 1;
+
+        margin: auto;
+        max-width: 64rem;
+
+        padding-left: var(--outside-padding);
+        padding-right: var(--outside-padding);
+    }
+</style>

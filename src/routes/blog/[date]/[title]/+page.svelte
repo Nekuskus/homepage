@@ -17,4 +17,17 @@
     <i style="font-size: small;">[{data.date}]</i>
 </p>
 
-{@html marked.parse(data.content)}
+<article>
+    {@html marked.parse(data.content)}
+</article>
+
+<style>
+
+    article {
+        margin: 0 auto 0 auto;
+        max-width: 64rem;
+
+        padding-left: var(--outside-padding);
+        padding-right: var(--outside-padding);
+    }
+</style>

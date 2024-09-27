@@ -8,5 +8,4 @@ export async function load({ params }) {
     }
 }
 
-// No need to handle 404 errors, prerender will only create existing posts
 export const prerender = true;

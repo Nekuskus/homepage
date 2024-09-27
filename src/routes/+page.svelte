@@ -8,18 +8,18 @@
     <meta name="description" content="kuskus's homepage" />
 </svelte:head>
 
-<section>
+<article>
     {@html marked.parse(content)}
-</section>
+</article>
 
 <style>
-    section {
+    article {
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        flex: 0.8;
-
+        flex: 1;
+        max-width: 64rem;
         padding-left: var(--outside-padding);
         padding-right: var(--outside-padding);
     }

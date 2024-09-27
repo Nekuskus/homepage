@@ -4,16 +4,16 @@
 </script>
 
 <svelte:head>
-    <title>@kuskus.dev - misc<title>
+    <title>@kuskus.dev - misc</title>
     <meta name="description" content="kuskus's ???" />
 </svelte:head>
 
-<section>
+<article>
     {@html marked.parse(content)}
-</section>
+</article>
 
 <style>
-    section {
+    article {
         display: flex;
         flex-direction: column;
         justify-content: start;

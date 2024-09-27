@@ -7,7 +7,7 @@ async function getEntries() {
     let entries = fs.readdirSync("src/lib/contents/blog")
         .filter(name => name.endsWith('.md'))
         .map(name => name.replace('.md', '').split(' '))
-        .map(split => `/blog/${split[0]}/${split[1]}`);
+        .map(split => [`/blog/${split[0]}/${split[1]}`, `/blog/${split[0]}`]).flat();
 
     entries.push('*');
 
