@@ -28,6 +28,9 @@ const config = {
         }),
         prerender: {
             entries: await getEntries()
+        },
+        paths: {
+            // base: 'https://nekuskus.github.io/'
         }
     }
 };
