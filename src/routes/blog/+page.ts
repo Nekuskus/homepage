@@ -34,7 +34,7 @@ export async function load({ params }) {
         };
     }));
     return {
-        entries: entries
+        entries: entries.reverse()
     };
 }
 

@@ -15,7 +15,7 @@
 
     <Router />
 
-    <Comment vertical style="position: absolute; right: 0; top: 35%">
+    <Comment vertical style="position: fixed; right: 0; top: 35%">
         TODO: Language selector here...
     </Comment>
 
@@ -26,14 +26,20 @@
     </main>
 
     {#if size > 1200}
-        <Comment style="position: absolute; left: 0; bottom: 0;">
+        <Comment style="position: fixed; left: 0; bottom: 0;">
             TODO: layout selector (portfolio, neocities), theme selector: (day,
             night); saved in cookies
         </Comment>
 
-        <Comment style="position: absolute; right: 0; bottom: 0;">
-            TODO: media progress tracker<br />&lt;pre&gt; (maybe), ascii outline! (+─|), bars
+        <Comment style="position: fixed; left: 0; bottom: 2%;">
+            TODO: join a webring
         </Comment>
+
+        <Comment style="position: fixed; right: 0; bottom: 0;">
+            TODO: media progress tracker<br />&lt;pre&gt; (maybe), ascii
+            outline! (+─|), bars
+        </Comment>
+
     {/if}
 
     <Footer />

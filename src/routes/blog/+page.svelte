@@ -12,11 +12,11 @@
 
 <article>
     <ul>
-        <Comment>TODO: Make these blocks!</Comment>
+        <Comment>TODO: Make these blocks! (with content previews...)</Comment>
         {#each data.entries as { heading, date, title }}
             <li>
                 <a href="/blog/{date}/{title}">
-                    {heading} [{date}]
+                    {heading} <time datetime="{date.split('-').reverse().join('-')}">[{date}]</time>
                 </a>
             </li>
         {/each}

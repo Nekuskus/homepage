@@ -13,16 +13,19 @@
 
 <Comment>TODO: CSS</Comment>
 
-<p style="text-align: center;">
-    <i style="font-size: small;">[{data.date}]</i>
-</p>
+<time datetime="{data.date.split('-').reverse().join('-')}">
+    <p style="text-align: center;">
+        <i style="font-size: small;">[{data.date}]</i>
+    </p>
+</time>
+
+<!-- TODO: Set an outline on the blogpost and overall format it much more nicely... -->
 
 <article>
     {@html marked.parse(data.content)}
 </article>
 
 <style>
-
     article {
         margin: 0 auto 0 auto;
         max-width: 64rem;

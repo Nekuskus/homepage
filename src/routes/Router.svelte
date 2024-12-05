@@ -1,17 +1,19 @@
-<script>
+<script lang="ts">
     import { page } from "$app/stores";
-    let emoji;
+    let emoji: String;
 
-    let month = new Date().getMonth();
+    $: {
+        let month = new Date().getMonth();
     
-    if (month == 11 || month <= 1) { // winter
-        emoji = "🍊";
-    } else if (month <= 4) { // spring
-        emoji = "🍒";
-    } else if (month <= 7) { // summer
-        emoji = "🍉";
-    } else { // autumn
-        emoji = "🍇";
+        if (month == 11 || month <= 1) { // winter
+            emoji = "🍊";
+        } else if (month <= 4) { // spring
+            emoji = "🍒";
+        } else if (month <= 7) { // summer
+            emoji = "🍉";
+        } else { // autumn
+            emoji = "🍇";
+        }
     }
 </script>
 
